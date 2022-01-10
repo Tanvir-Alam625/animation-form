@@ -13,16 +13,17 @@
     display: grid;
     align-items: center;
     background-size: 100% 100%;
-    background-image: linear-gradient(rgba(170, 248, 229, 0.3),rgba(142, 228, 250, 0.6)),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+    background-image: linear-gradient(rgba(170, 248, 229, 0.3),rgba(142, 228, 250, 0.6)),
+    url(../images/anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
     
 
 }
 .singup_sm_container{
-    background-image: linear-gradient(240deg ,rgba(238, 232, 232, 0.8)55%,rgba(148, 108, 108, 0.185)45%),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+    background-image: linear-gradient(240deg ,rgba(238, 232, 232, 0.8)55%,rgba(148, 108, 108, 0.185)45%),url(../images/anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
 }
 .login_sm_container
 {
-    background-image: linear-gradient(240deg,rgba(148, 108, 108, 0.185)50% ,rgba(238, 232, 232, 0.8)50%),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+    background-image: linear-gradient(240deg,rgba(148, 108, 108, 0.185)50% ,rgba(238, 232, 232, 0.8)50%),url(../images/anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
 }
 .login_sm_container::before{
     content: '';
