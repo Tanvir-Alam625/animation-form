@@ -1,0 +1,246 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    align-items: center;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(170, 248, 229, 0.3),rgba(142, 228, 250, 0.6)),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+    
+
+}
+.singup_sm_container{
+    background-image: linear-gradient(240deg ,rgba(238, 232, 232, 0.8)55%,rgba(148, 108, 108, 0.185)45%),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+}
+.login_sm_container
+{
+    background-image: linear-gradient(240deg,rgba(148, 108, 108, 0.185)50% ,rgba(238, 232, 232, 0.8)50%),url(anime-girl-watches-the-sunset-with-her-cat-hd-wallpaper-828x350.jpg);
+}
+.login_sm_container::before{
+    content: '';
+    position: absolute;
+    height: 58vh;
+    width: 5px;
+    background: rgb(53, 207, 53);
+    transform: rotate(150deg);
+    border-radius: 20px;
+}
+.singup_sm_container::before{
+
+    content: '';
+    position: absolute;
+    height: 58vh;
+    width: 5px;
+    left: 46%;
+    right: 54%;
+
+    background: rgb(53, 207, 53);
+    transform: rotate(150deg);
+    border-radius: 20px;
+}
+.sm_container{
+    height: 50vh;
+    width: 65vw;
+    /* transform: translateX(-50% -50%);  */
+    margin: 0 auto;
+    box-shadow: 0px 3px 20px  1px gray;
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fromLogin{
+    margin-left: -50px;
+}
+.fromSignup{
+    margin-right: -60px;
+
+}
+.signupFromGroup{
+    display: flex;
+}
+.signupinput{
+    position: relative;
+    margin: 20px 10px;
+    width: 12vw;
+    
+}
+.Input{
+    position: relative;
+    margin: 20px 0;
+    width: 20vw;
+}
+ span{
+
+    color: red;
+} 
+.signupinput span{
+    height: 2px;
+
+}
+
+
+input:focus~ span{
+    width: 100%;
+    background: palevioletred;
+    
+}
+input:valid~ span{
+    width: 100%;
+
+    background: palevioletred;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid gray;
+    font-size: 17px;
+    color: palevioletred;
+    padding: 3px 5px;
+}
+.signupinput input{
+    font-size: 12px;
+    border-bottom:1.5px solid gray ;
+}
+input::placeholder{
+    color: gray;
+    font-weight: lighter;
+    background: transparent;
+
+}
+.signupinput label,
+.pass label{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:#86326B; 
+}
+.signupinput label{
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #86326B;
+}
+.loginButton{
+    margin: 20px 0px;
+    width: 20vw;
+}
+.loginButton button,
+.signupButton button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #86326B;
+    transition: 0.9s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 1px gainsboro;
+    background-image: linear-gradient(to right, rgba(218, 182, 207, 0.76),rgba(187, 109, 163, 1));
+}
+.signupButton{
+    width: 26vw;
+    margin-left: 5px;
+}
+.signupButton button:hover,
+.loginButton button:hover{
+    transition: 0.9s;
+    background-image: linear-gradient(to right,rgba(187, 109, 163, 1), rgba(218, 182, 207, 0.76));
+}
+
+.loginButton a{
+    color: hotpink;
+    color: green;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.FromHeading{
+    background: transparent;
+    padding: 15px;
+}
+.signupFromHeading{
+    text-align: start;    
+}
+.loginFromHeading{
+text-align: end;
+}
+.FromHeading h2{
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-right: 5px solid  rgb(189, 187, 187); */
+    text-shadow: 1px 4px 1px gray;
+    margin-bottom: 40px;
+    padding: 10px ;
+    animation: zoom 2s infinite;
+    overflow: hidden;
+}
+.signupFromHeading h2::before{
+    content: '';
+    position: absolute;
+    color: palegreen;
+    background: palegreen;
+    height: 100%;
+    width: 6px;
+    left: 0%;
+    border-radius: 20px;
+    transform: translateX(50% -50%);
+}
+.loginFromHeading h2::after{
+    content: '';
+    position: absolute;
+    color: palegreen;
+    background: palegreen;
+    height: 100%;
+    width: 6px;
+    border-radius: 20px;
+    transform: translateX(50% -50%);
+    /* bottom: 0; */
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0.9);
+    }25%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(0.9);
+
+    }
+    100%{
+        transform: scale(0.9);
+
+    }
+}
+.FromHeading a{
+    font-size: 30px;
+    color: #fff;
+    padding: 5px 15px;
+    transition: .5s;
+    border: 2px solid palegreen;
+    border-radius: 5px;
+    background-color: rgba(76, 114, 104, 0.3);
+
+    
+}
+.FromHeading a:hover{
+    background-color: rgba(60, 88, 81, 0.6);
+}
+
